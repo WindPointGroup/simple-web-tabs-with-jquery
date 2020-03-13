@@ -14,7 +14,7 @@
 
     <div class="toggle-menu">
         <div class="toggle-menu-item" data-togglegroup="primaryTabs" data-toggleid="hello"><label>Hello World</label></div>
-        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="blah"><label>Blah Blah</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="blah"><label>Nested Tabs</label></div>
         <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="foo"><label>Foo Bar</label></div>
     </div>
 
@@ -23,7 +23,26 @@
     </div>
 
     <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="blah">
-        <h1>Blah Blah</h1>
+        <h1>Nested Tabs</h1>
+
+        <div class="toggle-menu">
+            <div class="toggle-menu-item" data-togglegroup="nestedTabs" data-toggleid="subTab1"><label>Sub Tab 1</label></div>
+            <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="nestedTabs" data-toggleid="subTab2"><label>Sub Tab 2</label></div>
+            <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="nestedTabs" data-toggleid="subTab3"><label>Sub Tab 3</label></div>
+        </div>
+
+        <div class="d-block" data-togglegroup="nestedTabs" data-toggleview="subTab1">
+            <h1>Sub Tab 1</h1>
+        </div>
+
+        <div class="d-none" data-togglegroup="nestedTabs" data-toggleview="subTab2">
+            <h1>Sub Tab 2</h1>
+        </div>
+
+        <div class="d-none" data-togglegroup="nestedTabs" data-toggleview="subTab3">
+            <h1>Sub Tab 3</h1>
+        </div>
+
     </div>
 
     <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="foo">
