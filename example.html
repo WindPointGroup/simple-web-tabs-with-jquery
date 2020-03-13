@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+
+    <!-- load css -->
+    <link href="./simple_tabs.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div style="padding: 20px">
+
+    <div class="toggle-menu">
+        <div class="toggle-menu-item" data-togglegroup="primaryTabs" data-toggleid="hello"><label>Hello World</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="blah"><label>Blah Blah</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="foo"><label>Foo Bar</label></div>
+    </div>
+
+    <div class="d-block" data-togglegroup="primaryTabs" data-toggleview="hello">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="blah">
+        <h1>Blah Blah</h1>
+    </div>
+
+    <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="foo">
+        <h1>Foo Bar</h1>
+    </div>
+
+</div>
+
+
+<div style="padding: 20px">
+
+    <div class="toggle-menu">
+        <div class="toggle-menu-item" data-togglegroup="secondaryTabs" data-toggleid="tabA"><label>Tab A</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabB"><label>Tab B</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabC"><label>Tab C</label></div>
+    </div>
+
+    <div class="d-block" data-togglegroup="secondaryTabs" data-toggleview="tabA">
+        <h1>AAAAA</h1>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabB">
+        <h1>BBBBB</h1>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabC">
+        <h1>CCCCC</h1>
+    </div>
+
+</div>
+
+
+
+<!-- slim,min jquery is very helpful -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<!-- load js -->
+<script src="./simple_tabs.js"></script>
+
+</body>
+</html>
